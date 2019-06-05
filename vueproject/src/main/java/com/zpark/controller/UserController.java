@@ -21,6 +21,7 @@ public class UserController {
         user.setxUsername(uname);
         user.setxUserpwd(upwd);
         System.out.println(user);
+        System.out.println(user);
         return this.userService.queryUser(user);
     }
 }
