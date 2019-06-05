@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.mapper.XCustomerMapper" >
+  <resultMap id="BaseResultMap" type="com.example.pojo.XCustomer" >
+    <id column="x_userid" property="xUserid" jdbcType="INTEGER" />
+    <result column="x_username" property="xUsername" jdbcType="VARCHAR" />
+    <result column="x_userpwd" property="xUserpwd" jdbcType="VARCHAR" />
+    <result column="x_usergrade" property="xUsergrade" jdbcType="VARCHAR" />
+    <result column="x_status" property="xStatus" jdbcType="VARCHAR" />
+    <result column="x_createdate" property="xCreatedate" jdbcType="TIMESTAMP" />
+    <result column="x_isdelete" property="xIsdelete" jdbcType="VARCHAR" />
+    <result column="x_desc" property="xDesc" jdbcType="VARCHAR" />
+    <result column="x_mobile" property="xMobile" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from x_customer
+    where x_userid = #{xUserid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.example.pojo.XCustomer" >
+    insert into x_customer (x_userid, x_username, x_userpwd, 
+      x_usergrade, x_status, x_createdate, 
+      x_isdelete, x_desc, x_mobile
+      )
+    values (#{xUserid,jdbcType=INTEGER}, #{xUsername,jdbcType=VARCHAR}, #{xUserpwd,jdbcType=VARCHAR}, 
+      #{xUsergrade,jdbcType=VARCHAR}, #{xStatus,jdbcType=VARCHAR}, #{xCreatedate,jdbcType=TIMESTAMP}, 
+      #{xIsdelete,jdbcType=VARCHAR}, #{xDesc,jdbcType=VARCHAR}, #{xMobile,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.example.pojo.XCustomer" >
+    update x_customer
+    set x_username = #{xUsername,jdbcType=VARCHAR},
+      x_userpwd = #{xUserpwd,jdbcType=VARCHAR},
+      x_usergrade = #{xUsergrade,jdbcType=VARCHAR},
+      x_status = #{xStatus,jdbcType=VARCHAR},
+      x_createdate = #{xCreatedate,jdbcType=TIMESTAMP},
+      x_isdelete = #{xIsdelete,jdbcType=VARCHAR},
+      x_desc = #{xDesc,jdbcType=VARCHAR},
+      x_mobile = #{xMobile,jdbcType=VARCHAR}
+    where x_userid = #{xUserid,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select x_userid, x_username, x_userpwd, x_usergrade, x_status, x_createdate, x_isdelete, 
+    x_desc, x_mobile
+    from x_customer
+    where x_userid = #{xUserid,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select x_userid, x_username, x_userpwd, x_usergrade, x_status, x_createdate, x_isdelete, 
+    x_desc, x_mobile
+    from x_customer
+  </select>
+  <select id="selectByCust" resultMap="BaseResultMap"  parameterType="com.example.pojo.XCustomer" >
+    select x_userid, x_username, x_userpwd, x_usergrade, x_status, x_createdate, x_isdelete,
+    x_desc, x_mobile
+    from x_customer x
+    <where>
+      <if test="xUserid!=null and xUserid!=''">
+        and x.x_userid = #{xUserid}
+      </if>
+      <if test="xUsername!=null and xUsername!=''">
+        and x.x_username = #{xUsername}
+      </if>
+      <if test="xUserpwd!=null and xUserpwd!=''">
+        and x.x_userpwd = #{xUserpwd}
+      </if>
+      <if test="xUsergrade!=null and xUsergrade!=''">
+        and x.x_usergrade = #{xUsergrade}
+      </if>
+      <if test="xStatus!=null and xStatus!=''">
+        and x.x_status = #{xStatus}
+      </if>
+      <if test="xCreatedate!=null ">
+        and x.x_createdate = #{xCreatedate}
+      </if>
+      <if test="xIsdelete!=null and xIsdelete!=''">
+        and x.x_isdelete = #{xIsdelete}
+      </if>
+      <if test="xDesc!=null and xDesc!=''">
+        and x.x_desc = #{xDesc}
+      </if>
+      <if test="xMobile!=null and xMobile!=''">
+        and x.x_mobile = #{xMobile}
+      </if>
+    </where>
+    order by x.x_userid desc
+  </select>
+</mapper>

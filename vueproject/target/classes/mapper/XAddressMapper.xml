@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zpark.mapper.XAddressMapper" >
+  <resultMap id="BaseResultMap" type="com.zpark.pojo.XAddress" >
+    <id column="x_userid" property="xUserid" jdbcType="INTEGER" />
+    <result column="x_postaddress" property="xPostaddress" jdbcType="VARCHAR" />
+    <result column="x_modify" property="xModify" jdbcType="VARCHAR" />
+    <result column="x_isdelete" property="xIsdelete" jdbcType="VARCHAR" />
+    <result column="x_postcode" property="xPostcode" jdbcType="VARCHAR" />
+    <result column="x_province" property="xProvince" jdbcType="VARCHAR" />
+    <result column="x_city" property="xCity" jdbcType="VARCHAR" />
+    <result column="x_county" property="xCounty" jdbcType="VARCHAR" />
+    <result column="x_desc" property="xDesc" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from x_address
+    where x_userid = #{xUserid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.zpark.pojo.XAddress" >
+    insert into x_address (x_userid, x_postaddress, x_modify, 
+      x_isdelete, x_postcode, x_province, 
+      x_city, x_county, x_desc
+      )
+    values (#{xUserid,jdbcType=INTEGER}, #{xPostaddress,jdbcType=VARCHAR}, #{xModify,jdbcType=VARCHAR}, 
+      #{xIsdelete,jdbcType=VARCHAR}, #{xPostcode,jdbcType=VARCHAR}, #{xProvince,jdbcType=VARCHAR}, 
+      #{xCity,jdbcType=VARCHAR}, #{xCounty,jdbcType=VARCHAR}, #{xDesc,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.zpark.pojo.XAddress" >
+    update x_address
+    set x_postaddress = #{xPostaddress,jdbcType=VARCHAR},
+      x_modify = #{xModify,jdbcType=VARCHAR},
+      x_isdelete = #{xIsdelete,jdbcType=VARCHAR},
+      x_postcode = #{xPostcode,jdbcType=VARCHAR},
+      x_province = #{xProvince,jdbcType=VARCHAR},
+      x_city = #{xCity,jdbcType=VARCHAR},
+      x_county = #{xCounty,jdbcType=VARCHAR},
+      x_desc = #{xDesc,jdbcType=VARCHAR}
+    where x_userid = #{xUserid,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select x_userid, x_postaddress, x_modify, x_isdelete, x_postcode, x_province, x_city, 
+    x_county, x_desc
+    from x_address
+    where x_userid = #{xUserid,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select x_userid, x_postaddress, x_modify, x_isdelete, x_postcode, x_province, x_city, 
+    x_county, x_desc
+    from x_address
+  </select>
+</mapper>

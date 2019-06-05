@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.mapper.MgEmpMapper" >
+  <resultMap id="BaseResultMap" type="com.example.pojo.MgEmp" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <id column="emp_id" property="empId" jdbcType="INTEGER" />
+    <result column="emp_name" property="empName" jdbcType="VARCHAR" />
+    <result column="dept_id" property="deptId" jdbcType="INTEGER" />
+    <result column="dept_name" property="deptName" jdbcType="VARCHAR" />
+    <result column="sex" property="sex" jdbcType="VARCHAR" />
+    <result column="contact" property="contact" jdbcType="VARCHAR" />
+    <result column="emp_grade" property="empGrade" jdbcType="VARCHAR" />
+    <result column="emp_workload" property="empWorkload" jdbcType="VARCHAR" />
+    <result column="emp_username" property="empUsername" jdbcType="VARCHAR" />
+    <result column="emp_password" property="empPassword" jdbcType="VARCHAR" />
+    <result column="emp_createDate" property="empCreatedate" jdbcType="TIMESTAMP" />
+    <result column="emp_filePath" property="empFilepath" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="map" >
+    delete from mg_emp
+    where id = #{id,jdbcType=INTEGER}
+      and emp_id = #{empId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.example.pojo.MgEmp" >
+    insert into mg_emp (id, emp_id, emp_name, 
+      dept_id, dept_name, sex, 
+      contact, emp_grade, emp_workload, 
+      emp_username, emp_password, emp_createDate, 
+      emp_filePath)
+    values (#{id,jdbcType=INTEGER}, #{empId,jdbcType=INTEGER}, #{empName,jdbcType=VARCHAR}, 
+      #{deptId,jdbcType=INTEGER}, #{deptName,jdbcType=VARCHAR}, #{sex,jdbcType=VARCHAR}, 
+      #{contact,jdbcType=VARCHAR}, #{empGrade,jdbcType=VARCHAR}, #{empWorkload,jdbcType=VARCHAR}, 
+      #{empUsername,jdbcType=VARCHAR}, #{empPassword,jdbcType=VARCHAR}, #{empCreatedate,jdbcType=TIMESTAMP}, 
+      #{empFilepath,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.example.pojo.MgEmp" >
+    update mg_emp
+    set emp_name = #{empName,jdbcType=VARCHAR},
+      dept_id = #{deptId,jdbcType=INTEGER},
+      dept_name = #{deptName,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=VARCHAR},
+      contact = #{contact,jdbcType=VARCHAR},
+      emp_grade = #{empGrade,jdbcType=VARCHAR},
+      emp_workload = #{empWorkload,jdbcType=VARCHAR},
+      emp_username = #{empUsername,jdbcType=VARCHAR},
+      emp_password = #{empPassword,jdbcType=VARCHAR},
+      emp_createDate = #{empCreatedate,jdbcType=TIMESTAMP},
+      emp_filePath = #{empFilepath,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+      and emp_id = #{empId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="map" >
+    select id, emp_id, emp_name, dept_id, dept_name, sex, contact, emp_grade, emp_workload, 
+    emp_username, emp_password, emp_createDate, emp_filePath
+    from mg_emp
+    where id = #{id,jdbcType=INTEGER}
+      and emp_id = #{empId,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, emp_id, emp_name, dept_id, dept_name, sex, contact, emp_grade, emp_workload, 
+    emp_username, emp_password, emp_createDate, emp_filePath
+    from mg_emp
+  </select>
+
+  <select id="selectByMgEmp" parameterType="com.example.pojo.MgEmp" resultMap="empResultMap">
+    select *
+    from mg_emp e
+    <where>
+      <if test="empId!=null and empId!=''">
+        and e.emp_id = #{empId}
+      </if>
+      <if test="empLowPirce!=null">
+        and e.emp_name = #{empName}
+      </if>
+      <if test="deptId!=null and deptId!=''">
+        and e.dept_id like concat(#{deptId},'%')
+      </if>
+      <if test="deptName!=null and deptName!=''">
+        and e.dept_name = #{deptName}
+      </if>
+      <if test="sex!=null and sex!=''">
+        and e.sex = #{sex}
+      </if>
+      <if test="contact!=null and contact!=''">
+        and e.contact = #{contact}
+      </if>
+      <if test="empGrade!=null and empGrade!=''">
+        and e.emp_grade = #{empGrade}
+      </if>
+      <if test="empWorkload!=null and empWorkload!=''">
+        and e.emp_workload = #{empWorkload}
+      </if>
+      <if test="empUsername!=null and empUsername!=''">
+        and e.emp_username = #{empUsername}
+      </if>
+      <if test="empPassword!=null and empPassword!=''">
+        and e.emp_password = #{empPassword}
+      </if>
+    </where>
+    limit 1
+  </select>
+
+  <select id="findEmpAndDept" parameterType="com.example.pojo.MgEmp" resultMap="empResultMap">
+    select e.id,e.emp_id,e.emp_name,e.dept_id,e.dept_name,e.sex ,e.contact ,e.emp_grade,e.emp_workload,e.emp_username,e.emp_password,e.emp_createDate,g.id,g.dept_no,g.dept_name,g.parent_id
+    from mg_emp e join mg_dept g on e.dept_id = g.dept_no
+    <include refid="nameAndDeptno"></include>
+  </select>
+
+  <sql id="nameAndDeptno">
+    <where>
+      <if test="empName!=null and empName!=''">
+        and e.emp_name like #{empName}
+      </if>
+      <if test="deptId!=null ">
+        and e.dept_id = #{deptId}
+      </if>
+      <if test="empId!=null ">
+        and e.emp_id = #{empId}
+      </if>
+    </where>
+    order by e.emp_id
+  </sql>
+
+  <resultMap type="com.example.pojo.MgEmp" id="empResultMap">
+    <id column="id" jdbcType="INTEGER" property="id"/>
+    <result column="emp_id" jdbcType="INTEGER" property="empId"/>
+    <result column="emp_name" jdbcType="VARCHAR" property="empName"/>
+    <result column="dept_id" jdbcType="VARCHAR" property="deptId"/>
+    <result column="dept_name" jdbcType="DOUBLE" property="deptName"/>
+    <result column="sex" jdbcType="INTEGER" property="sex"/>
+    <result column="contact" jdbcType="INTEGER" property="contact"/>
+    <result column="emp_grade" jdbcType="INTEGER" property="empGrade"/>
+    <result column="emp_workload" jdbcType="INTEGER" property="empWorkload"/>
+    <result column="emp_username" jdbcType="INTEGER" property="empUsername"/>
+    <result column="emp_password" jdbcType="INTEGER" property="empPassword"/>
+    <result column="emp_createDate" jdbcType="INTEGER" property="createDate"/>
+    <result column="emp_filePath" jdbcType="VARCHAR" property="filePath"/>
+    <association property="mgDept" javaType="com.example.pojo.MgDept">
+      <id column="id" jdbcType="INTEGER" property="id"/>
+      <result column="dept_no" jdbcType="INTEGER" property="deptNo"/>
+      <result column="dept_name" jdbcType="VARCHAR" property="deptName"/>
+      <result column="parent_id" jdbcType="VARCHAR" property="parentId"/>
+    </association>
+  </resultMap>
+</mapper>

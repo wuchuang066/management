@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="jsproject" />
+        <module name="examine" />
+        <module name="xiaomi" />
+        <module name="vueproject" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="examine" target="1.8" />
+      <module name="homework" target="1.8" />
+      <module name="jsproject" target="1.8" />
+      <module name="management" target="1.8" />
+      <module name="vueproject" target="1.8" />
+      <module name="xiaomi" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="examine" options="-parameters" />
+      <module name="homework" options="-parameters" />
+      <module name="jsproject" options="-parameters" />
+      <module name="management" options="-parameters" />
+      <module name="vueproject" options="-parameters" />
+      <module name="xiaomi" options="-parameters" />
+    </option>
+  </component>
+</project>

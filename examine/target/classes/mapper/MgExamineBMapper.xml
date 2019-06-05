@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.mapper.MgExamineBMapper" >
+  <resultMap id="BaseResultMap" type="com.example.pojo.MgExamineB" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="emp_id" property="empId" jdbcType="INTEGER" />
+    <result column="workload" property="workload" jdbcType="INTEGER" />
+    <result column="technical_difficulty" property="technicalDifficulty" jdbcType="INTEGER" />
+    <result column="technical_responsibility" property="technicalResponsibility" jdbcType="INTEGER" />
+    <result column="delay_condition" property="delayCondition" jdbcType="INTEGER" />
+    <result column="bug_handle" property="bugHandle" jdbcType="INTEGER" />
+    <result column="bug_efficiency" property="bugEfficiency" jdbcType="INTEGER" />
+    <result column="feature_complete" property="featureComplete" jdbcType="INTEGER" />
+    <result column="feature_quality" property="featureQuality" jdbcType="INTEGER" />
+    <result column="code_standard" property="codeStandard" jdbcType="INTEGER" />
+    <result column="design_complete" property="designComplete" jdbcType="INTEGER" />
+    <result column="code_normalization" property="codeNormalization" jdbcType="INTEGER" />
+    <result column="page_quality" property="pageQuality" jdbcType="INTEGER" />
+    <result column="browser_compatibility" property="browserCompatibility" jdbcType="INTEGER" />
+    <result column="rules_observe" property="rulesObserve" jdbcType="INTEGER" />
+    <result column="team_spirit" property="teamSpirit" jdbcType="INTEGER" />
+    <result column="late_early_condition" property="lateEarlyCondition" jdbcType="INTEGER" />
+    <result column="coding_capabilities" property="codingCapabilities" jdbcType="INTEGER" />
+    <result column="communicate_ability" property="communicateAbility" jdbcType="INTEGER" />
+    <result column="technology_learn" property="technologyLearn" jdbcType="INTEGER" />
+    <result column="skills_growth" property="skillsGrowth" jdbcType="INTEGER" />
+    <result column="examine_grade" property="examineGrade" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from mg_examine_b
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.example.pojo.MgExamineB" >
+    insert into mg_examine_b (id, emp_id, workload, 
+      technical_difficulty, technical_responsibility, 
+      delay_condition, bug_handle, bug_efficiency, 
+      feature_complete, feature_quality, code_standard, 
+      design_complete, code_normalization, page_quality, 
+      browser_compatibility, rules_observe, team_spirit, 
+      late_early_condition, coding_capabilities, 
+      communicate_ability, technology_learn, skills_growth, 
+      examine_grade)
+    values (#{id,jdbcType=INTEGER}, #{empId,jdbcType=INTEGER}, #{workload,jdbcType=INTEGER}, 
+      #{technicalDifficulty,jdbcType=INTEGER}, #{technicalResponsibility,jdbcType=INTEGER}, 
+      #{delayCondition,jdbcType=INTEGER}, #{bugHandle,jdbcType=INTEGER}, #{bugEfficiency,jdbcType=INTEGER}, 
+      #{featureComplete,jdbcType=INTEGER}, #{featureQuality,jdbcType=INTEGER}, #{codeStandard,jdbcType=INTEGER}, 
+      #{designComplete,jdbcType=INTEGER}, #{codeNormalization,jdbcType=INTEGER}, #{pageQuality,jdbcType=INTEGER}, 
+      #{browserCompatibility,jdbcType=INTEGER}, #{rulesObserve,jdbcType=INTEGER}, #{teamSpirit,jdbcType=INTEGER}, 
+      #{lateEarlyCondition,jdbcType=INTEGER}, #{codingCapabilities,jdbcType=INTEGER}, 
+      #{communicateAbility,jdbcType=INTEGER}, #{technologyLearn,jdbcType=INTEGER}, #{skillsGrowth,jdbcType=INTEGER}, 
+      #{examineGrade,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.example.pojo.MgExamineB" >
+    update mg_examine_b
+    set emp_id = #{empId,jdbcType=INTEGER},
+      workload = #{workload,jdbcType=INTEGER},
+      technical_difficulty = #{technicalDifficulty,jdbcType=INTEGER},
+      technical_responsibility = #{technicalResponsibility,jdbcType=INTEGER},
+      delay_condition = #{delayCondition,jdbcType=INTEGER},
+      bug_handle = #{bugHandle,jdbcType=INTEGER},
+      bug_efficiency = #{bugEfficiency,jdbcType=INTEGER},
+      feature_complete = #{featureComplete,jdbcType=INTEGER},
+      feature_quality = #{featureQuality,jdbcType=INTEGER},
+      code_standard = #{codeStandard,jdbcType=INTEGER},
+      design_complete = #{designComplete,jdbcType=INTEGER},
+      code_normalization = #{codeNormalization,jdbcType=INTEGER},
+      page_quality = #{pageQuality,jdbcType=INTEGER},
+      browser_compatibility = #{browserCompatibility,jdbcType=INTEGER},
+      rules_observe = #{rulesObserve,jdbcType=INTEGER},
+      team_spirit = #{teamSpirit,jdbcType=INTEGER},
+      late_early_condition = #{lateEarlyCondition,jdbcType=INTEGER},
+      coding_capabilities = #{codingCapabilities,jdbcType=INTEGER},
+      communicate_ability = #{communicateAbility,jdbcType=INTEGER},
+      technology_learn = #{technologyLearn,jdbcType=INTEGER},
+      skills_growth = #{skillsGrowth,jdbcType=INTEGER},
+      examine_grade = #{examineGrade,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select id, emp_id, workload, technical_difficulty, technical_responsibility, delay_condition, 
+    bug_handle, bug_efficiency, feature_complete, feature_quality, code_standard, design_complete, 
+    code_normalization, page_quality, browser_compatibility, rules_observe, team_spirit, 
+    late_early_condition, coding_capabilities, communicate_ability, technology_learn, 
+    skills_growth, examine_grade
+    from mg_examine_b
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, emp_id, workload, technical_difficulty, technical_responsibility, delay_condition, 
+    bug_handle, bug_efficiency, feature_complete, feature_quality, code_standard, design_complete, 
+    code_normalization, page_quality, browser_compatibility, rules_observe, team_spirit, 
+    late_early_condition, coding_capabilities, communicate_ability, technology_learn, 
+    skills_growth, examine_grade
+    from mg_examine_b
+  </select>
+</mapper>
