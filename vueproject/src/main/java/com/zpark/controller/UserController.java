@@ -20,6 +20,7 @@ public class UserController {
         XCustomer user = new XCustomer();
         user.setxUsername(uname);
         user.setxUserpwd(upwd);
+        System.out.println(user);
         return this.userService.queryUser(user);
     }
 }
