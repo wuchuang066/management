@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zpark.mapper.XAddressMapperB" >
+  <resultMap id="BaseResultMap" type="com.zpark.pojo.XAddress" >
+    <id column="x_userid" property="xUserid" jdbcType="INTEGER" />
+    <result column="x_postaddress" property="xPostaddress" jdbcType="VARCHAR" />
+    <result column="x_modify" property="xModify" jdbcType="VARCHAR" />
+    <result column="x_isdelete" property="xIsdelete" jdbcType="VARCHAR" />
+    <result column="x_postcode" property="xPostcode" jdbcType="VARCHAR" />
+    <result column="x_province" property="xProvince" jdbcType="VARCHAR" />
+    <result column="x_city" property="xCity" jdbcType="VARCHAR" />
+    <result column="x_county" property="xCounty" jdbcType="VARCHAR" />
+    <result column="x_desc" property="xDesc" jdbcType="VARCHAR" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zpark.mapper.XMessageMapperB" >
+  <resultMap id="BaseResultMap" type="com.zpark.pojo.XMessage" >
+    <id column="x_userid" property="xUserid" jdbcType="INTEGER" />
+    <result column="x_vue" property="xVue" jdbcType="REAL" />
+    <result column="x_js" property="xJs" jdbcType="REAL" />
+    <result column="x_css" property="xCss" jdbcType="REAL" />
+    <result column="x_html" property="xHtml" jdbcType="REAL" />
+    <result column="x_visit_count" property="xVisitCount" jdbcType="INTEGER" />
+    <result column="x_sys_message" property="xSysMessage" jdbcType="INTEGER" />
+    <result column="x_count" property="xCount" jdbcType="INTEGER" />
+  </resultMap>
+  <select id="selectByPrimaryKey" resultMap="MessageResultMap" parameterType="java.lang.Integer" >
+    select m.x_userid, m.x_vue, m.x_js, m.x_css, m.x_html, m.x_visit_count, m.x_sys_message, m.x_count,v.id, v.x_userid, v.name, v.value from x_message  m join x_visits  v on m.x_userid = v.x_userid
+    where m.x_userid = #{xUserid,jdbcType=INTEGER}
+    order by v.name desc limit 7
+  </select>
+  <resultMap id="MessageResultMap" type="com.zpark.pojo.XMessage" >
+    <id column="x_userid" property="xUserid" jdbcType="INTEGER" />
+    <result column="x_vue" property="xVue" jdbcType="REAL" />
+    <result column="x_js" property="xJs" jdbcType="REAL" />
+    <result column="x_css" property="xCss" jdbcType="REAL" />
+    <result column="x_html" property="xHtml" jdbcType="REAL" />
+    <result column="x_visit_count" property="xVisitCount" jdbcType="INTEGER" />
+    <result column="x_sys_message" property="xSysMessage" jdbcType="INTEGER" />
+    <result column="x_count" property="xCount" jdbcType="INTEGER" />
+    <collection property="xVisits" resultMap="ListResultMap"/>
+  </resultMap>
+  <resultMap id="ListResultMap" type="com.zpark.pojo.XVisits">
+    <result column="id" property="id" jdbcType="INTEGER" />
+    <result column="x_userid" property="xUserid" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="DATE" />
+    <result column="value" property="value" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>

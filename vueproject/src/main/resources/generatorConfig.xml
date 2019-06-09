@@ -19,11 +19,15 @@
     <javaClientGenerator targetPackage="com.zpark.mapper" targetProject="./src/main/java"
                          type="XMLMAPPER"/>
 
-    <table schema="xiaomi" tableName="x_customer" enableSelectByExample="true" enableUpdateByPrimaryKey="true"
+    <!--<table schema="xiaomi" tableName="x_customer" enableSelectByExample="true" enableUpdateByPrimaryKey="true"
            enableDeleteByPrimaryKey="true">
       <columnOverride column="useActualColumnNames" property="false"/>
     </table>
     <table schema="xiaomi" tableName="x_address" enableSelectByExample="true" enableUpdateByPrimaryKey="true"
+           enableDeleteByPrimaryKey="true">
+      <columnOverride column="useActualColumnNames" property="false"/>
+    </table>-->
+    <table schema="xiaomi" tableName="x_visits" enableSelectByExample="true" enableUpdateByPrimaryKey="true"
            enableDeleteByPrimaryKey="true">
       <columnOverride column="useActualColumnNames" property="false"/>
     </table>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zpark.mapper.XVisitsMapper" >
+  <resultMap id="BaseResultMap" type="com.zpark.pojo.XVisits" >
+    <result column="id" property="id" jdbcType="INTEGER" />
+    <result column="x_userid" property="xUserid" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="DATE" />
+    <result column="value" property="value" jdbcType="INTEGER" />
+  </resultMap>
+  <insert id="insert" parameterType="com.zpark.pojo.XVisits" >
+    insert into x_visits (id, x_userid, name, 
+      value)
+    values (#{id,jdbcType=INTEGER}, #{xUserid,jdbcType=INTEGER}, #{name,jdbcType=DATE}, 
+      #{value,jdbcType=INTEGER})
+  </insert>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, x_userid, name, value
+    from x_visits
+  </select>
+</mapper>

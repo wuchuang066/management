@@ -13,6 +13,4 @@ public interface XCustomerMapper {
     List<XCustomer> selectAll();
 
     int updateByPrimaryKey(XCustomer record);
-
-    XCustomer selectByCust(XCustomer customer);
 }

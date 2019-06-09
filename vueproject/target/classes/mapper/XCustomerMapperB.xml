@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zpark.mapper.XCustomerMapperB">
+    <resultMap id="BaseResultMap" type="com.zpark.pojo.XCustomer">
+        <id column="x_userid" property="xUserid" jdbcType="INTEGER"/>
+        <result column="x_username" property="xUsername" jdbcType="VARCHAR"/>
+        <result column="x_userpwd" property="xUserpwd" jdbcType="VARCHAR"/>
+        <result column="x_mobile" property="xMobile" jdbcType="VARCHAR"/>
+        <result column="x_status" property="xStatus" jdbcType="VARCHAR"/>
+        <result column="x_createdate" property="xCreatedate" jdbcType="TIMESTAMP"/>
+        <result column="x_isdelete" property="xIsdelete" jdbcType="VARCHAR"/>
+        <result column="x_usergrade" property="xUsergrade" jdbcType="VARCHAR"/>
+        <result column="x_desc" property="xDesc" jdbcType="VARCHAR"/>
+        <result column="x_loginDate" property="xLogindate" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <update id="updateByPrimaryKey" parameterType="com.zpark.pojo.XCustomer">
+    update x_customer
+    set x_username = #{xUsername,jdbcType=VARCHAR},
+      x_userpwd = #{xUserpwd,jdbcType=VARCHAR},
+      x_mobile = #{xMobile,jdbcType=VARCHAR},
+      x_status = #{xStatus,jdbcType=VARCHAR},
+      x_createdate = #{xCreatedate,jdbcType=TIMESTAMP},
+      x_isdelete = #{xIsdelete,jdbcType=VARCHAR},
+      x_usergrade = #{xUsergrade,jdbcType=VARCHAR},
+      x_desc = #{xDesc,jdbcType=VARCHAR},
+      x_loginDate = #{xLogindate,jdbcType=TIMESTAMP}
+    where x_userid = #{xUserid,jdbcType=INTEGER}
+  </update>
+    <select id="selectByCust" resultMap="BaseResultMap" parameterType="com.zpark.pojo.XCustomer">
+        select x_userid, x_username, x_userpwd, x_mobile, x_status, x_createdate, x_isdelete,
+        x_usergrade, x_desc,x_loginDate
+        from x_customer
+        <where>
+            <if test="xUsername!=null and xUsername!=''">
+                and x_username = #{xUsername}
+            </if>
+            <if test="xUserpwd!=null and xUserpwd!=''">
+                and x_userpwd = #{xUserpwd}
+            </if>
+        </where>
+    </select>
+</mapper>

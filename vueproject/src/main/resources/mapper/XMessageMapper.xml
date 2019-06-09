@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zpark.mapper.XMessageMapper" >
+  <resultMap id="BaseResultMap" type="com.zpark.pojo.XMessage" >
+    <id column="x_userid" property="xUserid" jdbcType="INTEGER" />
+    <result column="x_vue" property="xVue" jdbcType="REAL" />
+    <result column="x_js" property="xJs" jdbcType="REAL" />
+    <result column="x_css" property="xCss" jdbcType="REAL" />
+    <result column="x_html" property="xHtml" jdbcType="REAL" />
+    <result column="x_visit_count" property="xVisitCount" jdbcType="INTEGER" />
+    <result column="x_sys_message" property="xSysMessage" jdbcType="INTEGER" />
+    <result column="x_count" property="xCount" jdbcType="INTEGER" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from x_message
+    where x_userid = #{xUserid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.zpark.pojo.XMessage" >
+    insert into x_message (x_userid, x_vue, x_js, 
+      x_css, x_html, x_visit_count, 
+      x_sys_message, x_count)
+    values (#{xUserid,jdbcType=INTEGER}, #{xVue,jdbcType=REAL}, #{xJs,jdbcType=REAL}, 
+      #{xCss,jdbcType=REAL}, #{xHtml,jdbcType=REAL}, #{xVisitCount,jdbcType=INTEGER}, 
+      #{xSysMessage,jdbcType=INTEGER}, #{xCount,jdbcType=INTEGER})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.zpark.pojo.XMessage" >
+    update x_message
+    set x_vue = #{xVue,jdbcType=REAL},
+      x_js = #{xJs,jdbcType=REAL},
+      x_css = #{xCss,jdbcType=REAL},
+      x_html = #{xHtml,jdbcType=REAL},
+      x_visit_count = #{xVisitCount,jdbcType=INTEGER},
+      x_sys_message = #{xSysMessage,jdbcType=INTEGER},
+      x_count = #{xCount,jdbcType=INTEGER}
+    where x_userid = #{xUserid,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select x_userid, x_vue, x_js, x_css, x_html, x_visit_count, x_sys_message, x_count
+    from x_message
+    where x_userid = #{xUserid,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select x_userid, x_vue, x_js, x_css, x_html, x_visit_count, x_sys_message, x_count
+    from x_message
+  </select>
+</mapper>

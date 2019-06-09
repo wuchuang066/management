@@ -21,6 +21,8 @@ public class XCustomer {
 
     private String xDesc;
 
+    private Date xLogindate;
+
     public Integer getxUserid() {
         return xUserid;
     }
@@ -91,5 +93,13 @@ public class XCustomer {
 
     public void setxDesc(String xDesc) {
         this.xDesc = xDesc;
+    }
+
+    public Date getxLogindate() {
+        return xLogindate;
+    }
+
+    public void setxLogindate(Date xLogindate) {
+        this.xLogindate = xLogindate;
     }
 }

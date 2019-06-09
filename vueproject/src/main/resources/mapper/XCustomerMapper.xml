@@ -11,6 +11,7 @@
     <result column="x_isdelete" property="xIsdelete" jdbcType="VARCHAR" />
     <result column="x_usergrade" property="xUsergrade" jdbcType="VARCHAR" />
     <result column="x_desc" property="xDesc" jdbcType="VARCHAR" />
+    <result column="x_loginDate" property="xLogindate" jdbcType="TIMESTAMP" />
   </resultMap>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from x_customer
@@ -19,12 +20,12 @@
   <insert id="insert" parameterType="com.zpark.pojo.XCustomer" >
     insert into x_customer (x_userid, x_username, x_userpwd, 
       x_mobile, x_status, x_createdate, 
-      x_isdelete, x_usergrade, x_desc
-      )
+      x_isdelete, x_usergrade, x_desc, 
+      x_loginDate)
     values (#{xUserid,jdbcType=INTEGER}, #{xUsername,jdbcType=VARCHAR}, #{xUserpwd,jdbcType=VARCHAR}, 
       #{xMobile,jdbcType=VARCHAR}, #{xStatus,jdbcType=VARCHAR}, #{xCreatedate,jdbcType=TIMESTAMP}, 
-      #{xIsdelete,jdbcType=VARCHAR}, #{xUsergrade,jdbcType=VARCHAR}, #{xDesc,jdbcType=VARCHAR}
-      )
+      #{xIsdelete,jdbcType=VARCHAR}, #{xUsergrade,jdbcType=VARCHAR}, #{xDesc,jdbcType=VARCHAR}, 
+      #{xLogindate,jdbcType=TIMESTAMP})
   </insert>
   <update id="updateByPrimaryKey" parameterType="com.zpark.pojo.XCustomer" >
     update x_customer
@@ -35,25 +36,19 @@
       x_createdate = #{xCreatedate,jdbcType=TIMESTAMP},
       x_isdelete = #{xIsdelete,jdbcType=VARCHAR},
       x_usergrade = #{xUsergrade,jdbcType=VARCHAR},
-      x_desc = #{xDesc,jdbcType=VARCHAR}
+      x_desc = #{xDesc,jdbcType=VARCHAR},
+      x_loginDate = #{xLogindate,jdbcType=TIMESTAMP}
     where x_userid = #{xUserid,jdbcType=INTEGER}
   </update>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select x_userid, x_username, x_userpwd, x_mobile, x_status, x_createdate, x_isdelete, 
-    x_usergrade, x_desc
+    x_usergrade, x_desc, x_loginDate
     from x_customer
     where x_userid = #{xUserid,jdbcType=INTEGER}
   </select>
   <select id="selectAll" resultMap="BaseResultMap" >
     select x_userid, x_username, x_userpwd, x_mobile, x_status, x_createdate, x_isdelete, 
-    x_usergrade, x_desc
+    x_usergrade, x_desc, x_loginDate
     from x_customer
-  </select>
-
-  <select id="selectByCust" resultMap="BaseResultMap" parameterType="com.zpark.pojo.XCustomer" >
-    select x_userid, x_username, x_userpwd, x_mobile, x_status, x_createdate, x_isdelete,
-    x_usergrade, x_desc
-    from x_customer
-    where x_username = #{xUsername,jdbcType=VARCHAR} and x_userpwd = #{xUserpwd,jdbcType=VARCHAR}
   </select>
 </mapper>

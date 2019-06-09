@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zpark.mapper.XTodoMapperB" >
+  <resultMap id="BaseResultMap" type="com.zpark.pojo.XTodo" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="x_userid" property="xUserid" jdbcType="INTEGER" />
+    <result column="status" property="status" jdbcType="VARCHAR" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+  </resultMap>
+  <select id="selectAll" resultMap="BaseResultMap" parameterType="com.zpark.pojo.XTodo" >
+    select id, x_userid, status, title
+    from x_todo
+    where x_userid = #{xUserid,jdbcType=INTEGER}
+  </select>
+  <update id="updateTodo" parameterType="com.zpark.pojo.XTodo" >
+    update x_todo
+    <trim prefix="set" suffixOverrides=",">
+      <if test="xUserid!=null">x_userid=#{xUserid},</if>
+      <if test="status!=null">status=#{status},</if>
+      <if test="title!=null">title=#{title},</if>
+    </trim>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+</mapper>
