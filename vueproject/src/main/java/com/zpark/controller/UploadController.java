@@ -1,4 +1,4 @@
-package zpark.controller;
+package com.zpark.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.util.FileCopyUtils;

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zpark.mapper.XTableMsgMapperB" >
+  <resultMap id="BaseResultMap" type="com.zpark.pojo.XTableMsg" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="x_date" property="xDate" jdbcType="TIMESTAMP" />
+    <result column="x_name" property="xName" jdbcType="VARCHAR" />
+    <result column="x_address" property="xAddress" jdbcType="VARCHAR" />
+  </resultMap>
+  <select id="selectAll" resultMap="BaseResultMap" parameterType="com.zpark.pojo.XTableMsg">
+    select id, x_date, x_name, x_address
+    from x_table_msg t
+    <where>
+      <if test="xAddress!=null and xAddress!=''">
+         and  t.x_address like concat('%',#{xAddress},'%')
+      </if>
+      <if test="xName!=null and xName!=''">
+        and  t.x_name like concat('%',#{xName},'%')
+      </if>
+    </where>
+    order by t.x_date ${sortMode}
+
+  </select>
+</mapper>

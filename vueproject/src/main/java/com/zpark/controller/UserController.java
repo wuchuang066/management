@@ -13,6 +13,9 @@ import javax.servlet.http.HttpServletRequest;
 @RestController
 @ResponseBody
 @RequestMapping("user")
+/**
+ *  http://localhost:8086/message/updateTodo
+ */
 public class UserController {
     @Autowired
     private UserService userService;

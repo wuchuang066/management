@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zpark.mapper.XAreaMapper" >
+  <resultMap id="BaseResultMap" type="com.zpark.pojo.XArea" >
+    <id column="area_id" property="areaId" jdbcType="VARCHAR" />
+    <result column="area_code" property="areaCode" jdbcType="VARCHAR" />
+    <result column="area_name" property="areaName" jdbcType="VARCHAR" />
+    <result column="area_parent_id" property="areaParentId" jdbcType="VARCHAR" />
+    <result column="area_type" property="areaType" jdbcType="VARCHAR" />
+    <result column="area_desc" property="areaDesc" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from x_area
+    where area_id = #{areaId,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.zpark.pojo.XArea" >
+    insert into x_area (area_id, area_code, area_name, 
+      area_parent_id, area_type, area_desc
+      )
+    values (#{areaId,jdbcType=VARCHAR}, #{areaCode,jdbcType=VARCHAR}, #{areaName,jdbcType=VARCHAR}, 
+      #{areaParentId,jdbcType=VARCHAR}, #{areaType,jdbcType=VARCHAR}, #{areaDesc,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.zpark.pojo.XArea" >
+    update x_area
+    set area_code = #{areaCode,jdbcType=VARCHAR},
+      area_name = #{areaName,jdbcType=VARCHAR},
+      area_parent_id = #{areaParentId,jdbcType=VARCHAR},
+      area_type = #{areaType,jdbcType=VARCHAR},
+      area_desc = #{areaDesc,jdbcType=VARCHAR}
+    where area_id = #{areaId,jdbcType=VARCHAR}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select area_id, area_code, area_name, area_parent_id, area_type, area_desc
+    from x_area
+    where area_id = #{areaId,jdbcType=VARCHAR}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select area_id, area_code, area_name, area_parent_id, area_type, area_desc
+    from x_area
+  </select>
+</mapper>

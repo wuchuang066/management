@@ -27,7 +27,7 @@
            enableDeleteByPrimaryKey="true">
       <columnOverride column="useActualColumnNames" property="false"/>
     </table>-->
-    <table schema="xiaomi" tableName="x_visits" enableSelectByExample="true" enableUpdateByPrimaryKey="true"
+    <table schema="xiaomi" tableName="x_table_msg" enableSelectByExample="true" enableUpdateByPrimaryKey="true"
            enableDeleteByPrimaryKey="true">
       <columnOverride column="useActualColumnNames" property="false"/>
     </table>
