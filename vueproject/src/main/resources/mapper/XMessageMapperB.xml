@@ -16,6 +16,13 @@
     where m.x_userid = #{xUserid,jdbcType=INTEGER}
     order by v.name desc limit 7
   </select>
+  <update id="updateVisitCount" parameterType="com.zpark.pojo.XMessage" >
+    update x_message
+    <trim prefix="set" suffixOverrides=",">
+      <if test="xVisitCount!=null"> x_visit_count=#{xVisitCount},</if>
+    </trim>
+    where x_userid = #{xUserid,jdbcType=INTEGER}
+  </update>
   <resultMap id="MessageResultMap" type="com.zpark.pojo.XMessage" >
     <id column="x_userid" property="xUserid" jdbcType="INTEGER" />
     <result column="x_vue" property="xVue" jdbcType="REAL" />

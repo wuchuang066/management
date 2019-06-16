@@ -13,4 +13,6 @@ public interface MessageService {
 
     Integer updateTodo(XTodo xTodo);
 
+    Integer updateVisitCount(XMessage xMessage);
+
 }

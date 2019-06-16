@@ -35,4 +35,9 @@ public class MessageController {
         Integer integer = this.messageService.updateTodo(xTodo);
         return integer;
     }
+    @PostMapping("updateVisitCount")
+    private Integer updateVisitCount(XMessage message){
+        Integer integer = this.messageService.updateVisitCount(message);
+        return integer;
+    }
 }

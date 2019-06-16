@@ -33,4 +33,9 @@ public class MessageServiceImpl implements MessageService {
     public Integer updateTodo(XTodo xTodo) {
         return this.todoMapperB.updateTodo(xTodo);
     }
+
+    @Override
+    public Integer updateVisitCount(XMessage xMessage) {
+        return this.messageMapperB.updateVisitCount(xMessage);
+    }
 }
