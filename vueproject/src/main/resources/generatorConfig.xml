@@ -27,9 +27,12 @@
            enableDeleteByPrimaryKey="true">
       <columnOverride column="useActualColumnNames" property="false"/>
     </table>-->
-    <table schema="xiaomi" tableName="x_table_msg" enableSelectByExample="true" enableUpdateByPrimaryKey="true"
-           enableDeleteByPrimaryKey="true">
-      <columnOverride column="useActualColumnNames" property="false"/>
+<!--    <table schema="xiaomi" tableName="x_table_msg" enableSelectByExample="true" enableUpdateByPrimaryKey="true"-->
+<!--           enableDeleteByPrimaryKey="true">-->
+<!--      <columnOverride column="useActualColumnNames" property="false"/>-->
+<!--    </table>-->
+    <table schema="xiaomi" tableName="tbcar">
+      <columnOverride column="useActualColumnNames" property="false" />
     </table>
 
   </context>

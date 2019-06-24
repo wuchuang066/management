@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class TableServiceImpl implements TableService {
@@ -41,22 +42,46 @@ public class TableServiceImpl implements TableService {
 
     @Override
     public Integer updateTableMsg(XTableMsgB xTableMsg) {
-        String provinceName = this.getAddress(xTableMsg.getxProvinceCode());
-        String cityName = this.getAddress(xTableMsg.getxCityCode());
-        String regionName = this.getAddress(xTableMsg.getxRegionCode());
-        xTableMsg.setxAddress(provinceName + cityName + regionName);
+        String address = this.joinAddress(xTableMsg);
+        xTableMsg.setxAddress(address);
         return msgMapperB.updateTableMsg(xTableMsg);
     }
 
     @Override
     public Integer addTableMsg(XTableMsgB xTableMsg) {
-        String provinceName = this.getAddress(xTableMsg.getxProvinceCode());
-        String cityName = this.getAddress(xTableMsg.getxCityCode());
-        String regionName = this.getAddress(xTableMsg.getxRegionCode());
-        xTableMsg.setxAddress(provinceName + cityName + regionName);
+        String address = this.joinAddress(xTableMsg);
+        xTableMsg.setxAddress(address);
         return msgMapperB.addTableMsg(xTableMsg);
     }
 
+    /**
+     * 功能描述
+     * @author wuc
+     * @date 2019/6/17
+     * @param xTableMsg
+     * @return java.lang.String
+     */
+    @Override
+    public String queryJoinAddress(XTableMsgB xTableMsg) {
+        String s = this.joinAddress(xTableMsg);
+        System.out.println(s);
+        return s;
+    }
+
+    @Override
+    public Integer handDelete(Map<String, List<Integer>> array) {
+        List<Integer> keys = array.get("array");
+        return this.msgMapperB.deleteByPrimaryKey(keys);
+    }
+
+    /**
+     * 功能描述
+     *
+     * @param areaCode
+     * @return java.lang.String
+     * @author wuc
+     * @date 2019/6/17
+     */
     public String getAddress(String areaCode) {
         XArea xArea = new XArea();
         String address = "";
@@ -68,5 +93,19 @@ public class TableServiceImpl implements TableService {
             }
         }
         return address;
+    }
+
+    /**
+     * 功能描述
+     * @author wuc
+     * @date 2019/6/17
+     * @param xTableMsgb
+     * @return java.lang.String
+     */
+    public String joinAddress(XTableMsgB xTableMsgb) {
+        String provinceName = this.getAddress(xTableMsgb.getxProvinceCode());
+        String cityName = this.getAddress(xTableMsgb.getxCityCode());
+        String regionName = this.getAddress(xTableMsgb.getxRegionCode());
+        return provinceName + cityName + regionName;
     }
 }

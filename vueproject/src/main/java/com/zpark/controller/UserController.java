@@ -27,4 +27,5 @@ public class UserController {
         user.setxUserpwd(upwd);
         return this.userService.queryUser(user);
     }
+
 }

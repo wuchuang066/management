@@ -12,4 +12,6 @@ public interface XTableMsgMapperB {
 
     Integer addTableMsg(XTableMsgB xTableMsg);
 
+    Integer deleteByPrimaryKey(List<Integer> keys);
+
 }
