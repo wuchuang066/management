@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zpark.mapper.XTableMsgMapper" >
+  <resultMap id="BaseResultMap" type="com.zpark.pojo.XTableMsg" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="x_date" property="xDate" jdbcType="TIMESTAMP" />
+    <result column="x_name" property="xName" jdbcType="VARCHAR" />
+    <result column="x_address" property="xAddress" jdbcType="VARCHAR" />
+    <result column="x_province_code" property="xProvinceCode" jdbcType="VARCHAR" />
+    <result column="x_city_code" property="xCityCode" jdbcType="VARCHAR" />
+    <result column="x_region_code" property="xRegionCode" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from x_table_msg
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.zpark.pojo.XTableMsg" >
+    insert into x_table_msg (id, x_date, x_name, 
+      x_address, x_province_code, x_city_code, 
+      x_region_code)
+    values (#{id,jdbcType=INTEGER}, #{xDate,jdbcType=TIMESTAMP}, #{xName,jdbcType=VARCHAR}, 
+      #{xAddress,jdbcType=VARCHAR}, #{xProvinceCode,jdbcType=VARCHAR}, #{xCityCode,jdbcType=VARCHAR}, 
+      #{xRegionCode,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.zpark.pojo.XTableMsg" >
+    update x_table_msg
+    set x_date = #{xDate,jdbcType=TIMESTAMP},
+      x_name = #{xName,jdbcType=VARCHAR},
+      x_address = #{xAddress,jdbcType=VARCHAR},
+      x_province_code = #{xProvinceCode,jdbcType=VARCHAR},
+      x_city_code = #{xCityCode,jdbcType=VARCHAR},
+      x_region_code = #{xRegionCode,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select id, x_date, x_name, x_address, x_province_code, x_city_code, x_region_code
+    from x_table_msg
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, x_date, x_name, x_address, x_province_code, x_city_code, x_region_code
+    from x_table_msg
+  </select>
+</mapper>

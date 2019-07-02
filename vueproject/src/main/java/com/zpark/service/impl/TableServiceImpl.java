@@ -28,7 +28,7 @@ public class TableServiceImpl implements TableService {
             xTableMsg.setSortMode("desc");
         }
         XArea xArea = new XArea();
-        if (xTableMsg.getxAddress() != null) {
+        if (xTableMsg.getxAddress() != null &&xTableMsg.getxAddress() != "") {
             xArea.setAreaCode(xTableMsg.getxAddress());
             List<XArea> xAreas = areaMapperB.selectByCondition(xArea);
             if (xAreas != null && xAreas.size() > 0) {

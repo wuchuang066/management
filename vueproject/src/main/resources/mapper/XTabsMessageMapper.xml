@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zpark.mapper.XTabsMessageMapper" >
+  <resultMap id="BaseResultMap" type="com.zpark.pojo.XTabsMessage" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="x_title" property="xTitle" jdbcType="VARCHAR" />
+    <result column="x_dateTime" property="xDatetime" jdbcType="TIMESTAMP" />
+    <result column="x_status" property="xStatus" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from x_tabs_message
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.zpark.pojo.XTabsMessage" >
+    insert into x_tabs_message (id, x_title, x_dateTime, 
+      x_status)
+    values (#{id,jdbcType=INTEGER}, #{xTitle,jdbcType=VARCHAR}, #{xDatetime,jdbcType=TIMESTAMP}, 
+      #{xStatus,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.zpark.pojo.XTabsMessage" >
+    update x_tabs_message
+    set x_title = #{xTitle,jdbcType=VARCHAR},
+      x_dateTime = #{xDatetime,jdbcType=TIMESTAMP},
+      x_status = #{xStatus,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select id, x_title, x_dateTime, x_status
+    from x_tabs_message
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, x_title, x_dateTime, x_status
+    from x_tabs_message
+  </select>
+</mapper>

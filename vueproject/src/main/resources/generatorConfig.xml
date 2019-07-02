@@ -31,7 +31,7 @@
 <!--           enableDeleteByPrimaryKey="true">-->
 <!--      <columnOverride column="useActualColumnNames" property="false"/>-->
 <!--    </table>-->
-    <table schema="xiaomi" tableName="tbcar">
+    <table schema="xiaomi" tableName="x_tabs_message">
       <columnOverride column="useActualColumnNames" property="false" />
     </table>
 
