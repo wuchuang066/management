@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="jsproject" />
-        <module name="examine" />
-        <module name="xiaomi" />
         <module name="vueproject" />
+        <module name="examine" />
+        <module name="alipay" />
+        <module name="xiaomi" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="alipay" target="1.8" />
       <module name="examine" target="1.8" />
       <module name="homework" target="1.8" />
       <module name="jsproject" target="1.8" />
@@ -23,6 +25,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="alipay" options="-parameters" />
       <module name="examine" options="-parameters" />
       <module name="homework" options="-parameters" />
       <module name="jsproject" options="-parameters" />
