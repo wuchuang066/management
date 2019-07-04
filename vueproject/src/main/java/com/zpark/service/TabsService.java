@@ -18,4 +18,7 @@ public interface TabsService {
 
     int updateByPrimaryKey(XTabsMessage record);
 
+    int updateByCondition(XTabsMessage record);
+
+
 }

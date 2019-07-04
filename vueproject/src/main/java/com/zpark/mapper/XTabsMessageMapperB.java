@@ -16,4 +16,6 @@ public interface XTabsMessageMapperB {
     int updateByPrimaryKey(XTabsMessage record);
 
     List<XTabsMessage> selectAllByCondition(XTabsMessage record);
+
+    int updateByCondition(XTabsMessage record);
 }

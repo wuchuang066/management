@@ -1,6 +1,7 @@
 package com.zpark.controller;
 
 import com.zpark.pojo.XTabsAllMessage;
+import com.zpark.pojo.XTabsMessage;
 import com.zpark.service.TabsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,6 +24,12 @@ public class TabsMessageController {
     @RequestMapping("queryAll")
     public XTabsAllMessage queryAll(){
         return this.tabsService.selectAll();
+    }
+
+    @RequestMapping("updateMsg")
+    public Integer updateMsg( XTabsMessage xTabsMessage){
+        System.out.println(xTabsMessage);
+        return tabsService.updateByCondition(xTabsMessage);
     }
 
 }

@@ -1,81 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce543b6f-10da-4172-a221-e62d4fdab1c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_47.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_17_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/controller/TabsMessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/mapper/XTableMsgMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/mapper/XTabsMessageMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/mapper/XTabsMessageMapperB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/pojo/XTableMsg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/pojo/XTabsAllMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/pojo/XTabsMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/service/TabsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/service/impl/TabsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/src/main/resources/mapper/XTableMsgMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/src/main/resources/mapper/XTabsMessageMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/src/main/resources/mapper/XTabsMessageMapperB.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/target/classes/META-INF/vueproject.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/target/classes/com/zpark/controller/AlipayConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/target/classes/com/zpark/controller/AlipayController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/target/classes/com/zpark/controller/EmailController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/target/classes/com/zpark/controller/TabsMessageController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/target/classes/com/zpark/mapper/XTabsMessageMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/target/classes/com/zpark/mapper/XTabsMessageMapperB.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/target/classes/com/zpark/pojo/AlipayMessage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/target/classes/com/zpark/pojo/ServiceProvider.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/target/classes/com/zpark/pojo/XTableMsgB.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/target/classes/com/zpark/pojo/XTabsAllMessage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/target/classes/com/zpark/pojo/XTabsMessage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/target/classes/com/zpark/service/TabsService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/target/classes/com/zpark/service/impl/TabsServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/target/classes/com/zpark/util/CommonUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/target/classes/mapper/XTabsMessageMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vueproject/target/classes/mapper/XTabsMessageMapperB.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="ce543b6f-10da-4172-a221-e62d4fdab1c8" name="Default Changelist" comment="查询所有tabs 信息  按钮功能所有都没写呢">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examine/examine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/examine/examine.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examine/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/examine/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vueproject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vueproject/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/service/impl/TableServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/service/impl/TableServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vueproject/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vueproject/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vueproject/target/classes/com/zpark/service/impl/TableServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/vueproject/target/classes/com/zpark/service/impl/TableServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vueproject/target/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vueproject/target/classes/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vueproject/vueproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/vueproject/vueproject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examine/src/main/java/com/example/contoller/EmpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/examine/src/main/java/com/example/contoller/EmpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examine/target/classes/com/example/contoller/EmpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/examine/target/classes/com/example/contoller/EmpController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/controller/TabsMessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/controller/TabsMessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/mapper/XTabsMessageMapperB.java" beforeDir="false" afterPath="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/mapper/XTabsMessageMapperB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/service/TabsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/service/TabsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/service/impl/TabsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/service/impl/TabsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vueproject/src/main/resources/mapper/XTabsMessageMapperB.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vueproject/src/main/resources/mapper/XTabsMessageMapperB.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vueproject/target/classes/com/zpark/controller/TabsMessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/vueproject/target/classes/com/zpark/controller/TabsMessageController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -105,25 +40,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/controller/TabsMessageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            <state relative-caret-position="247">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#425#426#0" expanded="true" />
-                <element signature="e#451#452#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/controller/UserController.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.6.RELEASE/spring-webmvc-5.1.6.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="64">
+              <caret line="73" selection-start-line="73" selection-end-line="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.6.RELEASE/spring-webmvc-5.1.6.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="485" selection-start-line="485" selection-end-line="485" />
             </state>
           </provider>
         </entry>
@@ -131,8 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/service/TabsService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="87">
+              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,82 +82,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/service/impl/TabsServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="38" column="18" lean-forward="true" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+            <state relative-caret-position="87">
+              <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#605#606#0" expanded="true" />
-                <element signature="e#629#630#0" expanded="true" />
-                <element signature="e#689#690#0" expanded="true" />
-                <element signature="e#713#714#0" expanded="true" />
-                <element signature="e#785#786#0" expanded="true" />
-                <element signature="e#812#813#0" expanded="true" />
-                <element signature="e#970#971#0" expanded="true" />
-                <element signature="e#994#995#0" expanded="true" />
+                <element signature="e#1726#1727#0" expanded="true" />
+                <element signature="e#1750#1751#0" expanded="true" />
+                <element signature="e#1726#1727#0" expanded="true" />
+                <element signature="e#1750#1751#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/pojo/XTabsMessage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/pojo/XTabsAllMessage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/pojo/XTableMsgB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="12" column="17" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/service/impl/TableServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" selection-start-line="18" selection-end-line="22" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/mapper/XTabsMessageMapperB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vueproject/src/main/resources/mapper/XTabsMessageMapperB.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
-              <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+            <state relative-caret-position="293">
+              <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vueproject/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="56" lean-forward="true" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vueproject/src/main/resources/mapper/XTabsMessageMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-191" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vueproject/src/main/resources/mapper/XTableMsgMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-103" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vueproject/src/main/resources/mapper/XMessageMapperB.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="23" column="48" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="23" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -261,7 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/pojo/XArea.java" />
         <option value="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/pojo/XPosition.java" />
         <option value="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/controller/CommonController.java" />
         <option value="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/service/CommonService.java" />
@@ -305,13 +217,14 @@
         <option value="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/controller/TableController.java" />
         <option value="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/service/impl/TableServiceImpl.java" />
         <option value="$PROJECT_DIR$/vueproject/src/main/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/service/TabsService.java" />
-        <option value="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/controller/TabsMessageController.java" />
-        <option value="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/mapper/XTabsMessageMapperB.java" />
-        <option value="$PROJECT_DIR$/vueproject/src/main/resources/mapper/XTabsMessageMapperB.xml" />
         <option value="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/pojo/XTabsAllMessage.java" />
-        <option value="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/service/impl/TabsServiceImpl.java" />
         <option value="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/pojo/XTabsMessage.java" />
+        <option value="$PROJECT_DIR$/examine/src/main/java/com/example/contoller/EmpController.java" />
+        <option value="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/mapper/XTabsMessageMapperB.java" />
+        <option value="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/service/TabsService.java" />
+        <option value="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/service/impl/TabsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/vueproject/src/main/java/com/zpark/controller/TabsMessageController.java" />
+        <option value="$PROJECT_DIR$/vueproject/src/main/resources/mapper/XTabsMessageMapperB.xml" />
       </list>
     </option>
   </component>
@@ -352,10 +265,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="85" />
-    <option name="y" value="25" />
-    <option name="width" value="1750" />
-    <option name="height" value="980" />
+    <option name="x" value="27" />
+    <option name="width" value="1213" />
+    <option name="height" value="680" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -363,8 +275,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -423,37 +335,6 @@
               <item name="vueproject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zpark" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="management" type="462c0819:PsiDirectoryNode" />
-              <item name="vueproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zpark" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="management" type="462c0819:PsiDirectoryNode" />
-              <item name="vueproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zpark" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="management" type="462c0819:PsiDirectoryNode" />
-              <item name="vueproject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -479,7 +360,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/vueproject/src/main/resources/mapper" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/javaWeb/m-store" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -715,7 +596,10 @@
       <workItem from="1561618716856" duration="242000" />
       <workItem from="1561940049620" duration="1478000" />
       <workItem from="1561983833701" duration="1243000" />
-      <workItem from="1562034730069" duration="8853000" />
+      <workItem from="1562034730069" duration="9232000" />
+      <workItem from="1562063159996" duration="867000" />
+      <workItem from="1562113463525" duration="249000" />
+      <workItem from="1562202174031" duration="10701000" />
     </task>
     <task id="LOCAL-00001" summary="xiugai">
       <created>1559751985616</created>
@@ -752,7 +636,21 @@
       <option name="project" value="LOCAL" />
       <updated>1560682839092</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="查询所有tabs 信息  按钮功能所有都没写呢">
+      <created>1562059245095</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1562059245095</updated>
+    </task>
+    <task id="LOCAL-00007" summary="查询所有tabs 信息  按钮功能所有都没写呢">
+      <created>1562059293389</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1562059293389</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -761,7 +659,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="301498000" />
+    <option name="totallyTimeSpent" value="313694000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -773,9 +671,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23458445" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -786,19 +685,19 @@
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32914925" />
       <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" weight="0.32956153" />
-      <window_info anchor="bottom" id="Messages" order="4" weight="0.32719547" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50067025" side_tool="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.49932975" weight="0.32719547" />
       <window_info anchor="bottom" id="Problems" order="5" />
       <window_info anchor="bottom" id="Java Enterprise" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49932975" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="9" />
       <window_info anchor="bottom" id="Find" order="10" weight="0.3281471" />
-      <window_info anchor="bottom" id="Debug" order="11" visible="true" weight="0.33002833" />
+      <window_info active="true" anchor="bottom" id="Debug" order="11" visible="true" weight="0.3895184" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="14" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="15" weight="0.34419262" />
+      <window_info anchor="bottom" id="Run" order="15" weight="0.30878186" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -828,7 +727,8 @@
     <MESSAGE value="xiugai" />
     <MESSAGE value="表格三级联动+内容修改" />
     <MESSAGE value="编辑员工信息 + 添加员工信息（重新查询有问题）" />
-    <option name="LAST_COMMIT_MESSAGE" value="编辑员工信息 + 添加员工信息（重新查询有问题）" />
+    <MESSAGE value="查询所有tabs 信息  按钮功能所有都没写呢" />
+    <option name="LAST_COMMIT_MESSAGE" value="查询所有tabs 信息  按钮功能所有都没写呢" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -860,99 +760,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/examine/src/main/java/com/example/contoller/EmailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examine/src/main/java/com/example/contoller/DeptController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examine/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.6.RELEASE/spring-webmvc-5.1.6.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1193">
-          <caret line="565" selection-start-line="565" selection-end-line="565" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/pojo/AlipayMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-          <folding>
-            <element signature="e#356#357#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="e#643#644#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#821#822#0" expanded="true" />
-            <element signature="e#855#856#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#931#932#0" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
-            <element signature="e#1018#1019#0" expanded="true" />
-            <element signature="e#1054#1055#0" expanded="true" />
-            <element signature="e#1121#1122#0" expanded="true" />
-            <element signature="e#1171#1172#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueproject/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueproject/src/main/resources/mapper/XTableMsgMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" selection-start-line="12" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueproject/src/main/resources/mapper/XAddressMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueproject/src/main/resources/mapper/XAddressMapperB.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueproject/src/main/resources/mapper/XAreaMapperB.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueproject/src/main/resources/mapper/XCustomerMapperB.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueproject/src/main/resources/mapper/XMessageMapperB.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/controller/AlipayConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -960,9 +767,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vueproject/src/main/resources/mapper/TbcarMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vueproject/src/main/resources/mapper/TbcarMapper.xml" />
     <entry file="file://$PROJECT_DIR$/examine/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="49">
@@ -1077,17 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examine/src/main/java/com/example/ManagementApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/alipay/src/main/java/com/zpark/alipay/AlipayApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -1102,20 +896,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.6.RELEASE/spring-webmvc-5.1.6.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>
@@ -1147,13 +927,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="5" column="35" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/VueMainApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -1211,73 +984,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/service/impl/TableServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" selection-start-line="18" selection-end-line="22" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/service/TabsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/controller/TabsMessageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueproject/src/main/resources/mapper/XTabsMessageMapperB.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/mapper/XTabsMessageMapperB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/service/impl/TabsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="38" column="18" lean-forward="true" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#970#971#0" expanded="true" />
-            <element signature="e#994#995#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/查询所有tabs_信息__按钮功能所有都没写呢.patch" />
     <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/pojo/XTabsAllMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
+        <state relative-caret-position="374">
           <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1292,13 +1002,174 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/pojo/XTabsMessage.java">
+    <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/service/impl/TableServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        <state relative-caret-position="154">
+          <caret line="18" selection-start-line="18" selection-end-line="22" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examine/src/main/java/com/example/ManagementApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examine/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examine/src/main/java/com/example/contoller/DeptController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-263">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examine/src/main/java/com/example/contoller/EmailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examine/src/main/java/com/example/contoller/ExamineController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-222">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examine/src/main/java/com/example/contoller/EmpController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/VueMainApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/pojo/XTabsMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/mapper/XTabsMessageMapperB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.6.RELEASE/spring-webmvc-5.1.6.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.6.RELEASE/spring-webmvc-5.1.6.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="485" selection-start-line="485" selection-end-line="485" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/service/impl/TabsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1726#1727#0" expanded="true" />
+            <element signature="e#1750#1751#0" expanded="true" />
+            <element signature="e#1726#1727#0" expanded="true" />
+            <element signature="e#1750#1751#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/service/TabsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vueproject/src/main/java/com/zpark/controller/TabsMessageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vueproject/src/main/resources/mapper/XTableMsgMapperB.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-829" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vueproject/src/main/resources/mapper/XTabsMessageMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-191" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vueproject/src/main/resources/mapper/XTableMsgMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-103" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vueproject/src/main/resources/mapper/XMessageMapperB.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="23" column="48" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="23" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vueproject/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="56" lean-forward="true" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vueproject/src/main/resources/mapper/XTabsMessageMapperB.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
         </state>
       </provider>
     </entry>

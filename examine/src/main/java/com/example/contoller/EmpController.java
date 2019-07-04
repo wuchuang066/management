@@ -77,5 +77,13 @@ public class EmpController {
         System.out.println(mgEmps);
         return mgEmps;
     }
+    @RequestMapping("testArray")
+    public Integer[] testArray(Integer[] list){
+        System.out.println(list);
+        for(Integer i :list){
+            System.out.println(i);
+        }
+        return list;
+    }
 
 }

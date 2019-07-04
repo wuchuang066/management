@@ -50,12 +50,15 @@ public class TabsServiceImpl implements TabsService {
         List<XTabsMessage> xTabsMessagesRecycle = this.msgMapperB.selectAllByCondition(xTabsMessage);
         xTabsAllMessage.setRecycle(xTabsMessagesRecycle);
         return xTabsAllMessage;
-
-
     }
 
     @Override
     public int updateByPrimaryKey(XTabsMessage record) {
         return 0;
+    }
+
+    @Override
+    public int updateByCondition(XTabsMessage record) {
+        return this.msgMapperB.updateByCondition(record);
     }
 }
